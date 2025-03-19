@@ -12,18 +12,18 @@ namespace Engine
         constexpr int cellSize = 30;
         constexpr int cellCount = 25;
 
-        int score;
+       
 
 
-        extern int width_screen;
-        extern int height_screen;
+        constexpr const int width_screen=cellSize*cellCount;
+        constexpr const int height_screen=cellSize*cellCount;
 
 
         constexpr enum  Movement { LEFT, RIGHT, UP, DOWN };
 
-        double lastUpdateTime = 0;
+        constexpr int interval = 5;
 
-        bool isLose=false;
+       // extern bool isLose=false;
 	}
 
 }

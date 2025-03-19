@@ -1,10 +1,25 @@
 #pragma once
 #include <raylib.h>
 #include "Drawable.h"
+#include "Utils.h"
 
 namespace Engine
 {
+
 	class Food:public Drawable
+	{
+	private:
+		Vector2 position;
+		Texture2D foodTexture;
+
+	public:
+		explicit Food(int cellCount);
+		void Draw()const override;
+		~Food();
+		inline Vector2 getPosition();
+	};
+
+	/*class Food
 	{
 	private:
 		Vector2* position;
@@ -43,7 +58,7 @@ namespace Engine
 			return *position;
 		}
 
-	};
+	};*/
 
 
 };

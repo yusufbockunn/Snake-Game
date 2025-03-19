@@ -6,14 +6,11 @@ Game::Game()
 
 {
     SetTargetFPS(60);
-    specs::width_screen = specs::cellSize * specs::cellCount;
-    specs::height_screen = specs::cellSize * specs::cellCount;
 
     InitWindow(specs::width_screen, specs::height_screen, "Snake Game");
 
     firstFood = new Food(specs::cellCount);
     snake = new Snake(7);
-    Engine::specs::score = 0;
 
 }
 
@@ -22,13 +19,13 @@ void Game::Draw() const
    
         BeginDrawing();
 
-        firstFood->Draw(specs::cellSize);
-        snake->Draw(specs::cellSize);
+        firstFood->Draw();
+        snake->Draw();
         ClearBackground(specs::green);
         EndDrawing();
 }
 
-bool Game::CheckCollision() const
+inline bool Game::CheckCollision() const
 
 {
     for (int i = 1; i < snake->getBody().size(); i++)
@@ -47,7 +44,7 @@ bool Game::CheckCollision() const
 void Game::Update()
 {
 
-    snake->Update(0.1, Engine::specs::cellCount);
+    snake->Update();
 
 
     if (snake->getHead().x == firstFood->getPosition().x && snake->getHead().y == firstFood->getPosition().y)
@@ -59,7 +56,7 @@ void Game::Update()
 
     }
 
-    Engine::specs::isLose = CheckCollision();
+    isLose = CheckCollision();
 
 }
 

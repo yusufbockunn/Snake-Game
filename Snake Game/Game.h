@@ -21,6 +21,8 @@ namespace Engine
         ~Game();
         bool CheckCollision() const;
         void Init();
+    private:
+        bool isLose;
     };
 }
 

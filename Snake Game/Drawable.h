@@ -8,7 +8,7 @@ namespace Engine
 	private:
 	public:
 		Drawable();
-		virtual void Draw() const;
+		virtual void Draw() const=0;
 		virtual ~Drawable();
 	
 	};

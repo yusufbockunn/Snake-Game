@@ -1,7 +1,7 @@
 #include "Utils.h"
 
 
-Vector2 Engine::utils::generateRandomPosition(const int xRange,const int yRange)
+inline Vector2 Engine::utils::generateRandomPosition(const int xRange,const int yRange)
 {
 	Vector2 vec2;
 	vec2.x = GetRandomValue(0, xRange);
@@ -10,17 +10,19 @@ Vector2 Engine::utils::generateRandomPosition(const int xRange,const int yRange)
 	return vec2;
 }
 
-bool Engine::utils::EventTimer(double interval)
+inline bool Engine::utils::EventTimer()
 {
 	double current_time = GetTime();
+
+	double lastUpdateTime = 0;
 
 	//anlýk zaman
 	//kaç saniye sürcek
 	//en son kaydedilen anlýk zaman
-
-	if (current_time - specs::lastUpdateTime >= interval)
+	
+	if (current_time -lastUpdateTime >= specs::interval)
 	{
-		specs::lastUpdateTime = current_time;
+		lastUpdateTime = current_time;
 		return true;
 	}
 	else
