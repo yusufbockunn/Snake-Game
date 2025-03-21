@@ -19,7 +19,7 @@ namespace Engine
         constexpr const int height_screen=cellSize*cellCount;
 
 
-        constexpr enum  Movement { LEFT, RIGHT, UP, DOWN };
+        enum  Movement { LEFT, RIGHT, UP, DOWN };
 
         constexpr int interval = 5;
 

@@ -5,11 +5,10 @@ namespace Engine
 {
 	class Drawable
 	{
-	private:
 	public:
-		Drawable();
+		Drawable()=default;
 		virtual void Draw() const=0;
-		virtual ~Drawable();
+		virtual ~Drawable()=default;
 	
 	};
 }
