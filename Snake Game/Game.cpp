@@ -9,9 +9,13 @@ Game::Game()
 
     InitWindow(specs::width_screen, specs::height_screen, "Snake Game");
 
-    firstFood = new Food(specs::cellCount);
+    firstFood = new Food();
     snake = new Snake(7);
 
+}
+
+Game::~Game()
+{
 }
 
 void Game::Draw() const
@@ -52,7 +56,7 @@ void Game::Update()
 
         snake->addBody();
         delete firstFood;
-        firstFood = new Food(Engine::specs::cellCount);
+        firstFood = new Food();
 
     }
 

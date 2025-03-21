@@ -4,7 +4,7 @@ using namespace Engine;
 
 
 
-Food::Food(int cellCount):position( utils::generateRandomPosition(0,cellCount))
+Food::Food():position( utils::generateRandomPosition(specs::cellCount,specs::cellCount))
 {
 
 	Image image = LoadImage("Graphics/Boost.png");
@@ -22,7 +22,3 @@ Food::~Food()
 	UnloadTexture(foodTexture);
 }
 
-Vector2 Food::getPosition()
-{
-	return position;
-}

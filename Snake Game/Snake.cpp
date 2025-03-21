@@ -5,6 +5,7 @@ using namespace Engine;
 Snake::Snake(float _height)
 {
 	body = { Vector2{ 9,_height }, Vector2{ 8,_height }, Vector2{ 7,_height } };
+	current_move = specs::RIGHT;
 }
 void Snake::Draw() const
 {

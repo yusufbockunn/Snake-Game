@@ -21,7 +21,7 @@ namespace Engine
 
         enum  Movement { LEFT, RIGHT, UP, DOWN };
 
-        constexpr int interval = 5;
+        constexpr double interval = 0.1;
 
        // extern bool isLose=false;
 	}

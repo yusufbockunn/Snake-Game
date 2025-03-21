@@ -1,7 +1,7 @@
 #include "Utils.h"
 
 
-inline Vector2 Engine::utils::generateRandomPosition(const int xRange,const int yRange)
+ inline Vector2 Engine::utils::generateRandomPosition(const int xRange,const int yRange)
 {
 	Vector2 vec2;
 	vec2.x = GetRandomValue(0, xRange);
@@ -10,7 +10,7 @@ inline Vector2 Engine::utils::generateRandomPosition(const int xRange,const int 
 	return vec2;
 }
 
-inline bool Engine::utils::EventTimer()
+ inline bool Engine::utils::EventTimer()
 {
 	double current_time = GetTime();
 
