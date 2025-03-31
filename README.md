@@ -6,12 +6,15 @@ This is a simple **Snake Game** developed using **C++ and Raylib**. The game fol
 
 - Control the snake using **arrow keys**.
 - Eat the food to grow and increase your score.
-- The game ends if the snake **hits the wall** or **collides with itself**.
+- The game ends if the snake  **collides with itself**.
+- snake body continue  move other side if the snake **colides with wall**
 
 ## 📷 Screenshots
 
 ![Snake Game Screenshot]
-*(Replace this with an actual screenshot from your game.)*
+![image](https://github.com/user-attachments/assets/b3f1f9ca-b0cf-4477-abc5-b065a5f4163d)
+
+
 
 ## 🔧 Installation & Running
 
