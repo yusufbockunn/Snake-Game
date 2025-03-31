@@ -12,8 +12,7 @@ This is a simple **Snake Game** developed using **C++ and Raylib**. The game fol
 ## 📷 Screenshots
 
 ![Snake Game Screenshot]
-![image](https://github.com/user-attachments/assets/b3f1f9ca-b0cf-4477-abc5-b065a5f4163d)
-![image](https://github.com/user-attachments/assets/43488e8e-2537-4c05-a150-475caf7368bb)
+![image](https://github.com/user-attachments/assets/b3f1f9ca-b0cf-4477-abc5-b065a5f4163d) | ![image](https://github.com/user-attachments/assets/43488e8e-2537-4c05-a150-475caf7368bb)
 
 
 
