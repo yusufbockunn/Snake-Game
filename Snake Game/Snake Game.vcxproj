@@ -104,10 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -127,18 +129,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Food.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="src\Food.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\QAgent.cpp" />
+    <ClCompile Include="src\Snake.cpp" />
+    <ClCompile Include="src\SnakeEnv.cpp" />
+    <ClCompile Include="src\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Drawable.h" />
-    <ClInclude Include="Food.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Snake.h" />
-    <ClInclude Include="Specs.h" />
-    <ClInclude Include="Utils.h" />
+    <ClInclude Include="src\include\Drawable.h" />
+    <ClInclude Include="src\include\Food.h" />
+    <ClInclude Include="src\include\Game.h" />
+    <ClInclude Include="src\include\QAgent.h" />
+    <ClInclude Include="src\include\Snake.h" />
+    <ClInclude Include="src\include\SnakeEnv.h" />
+    <ClInclude Include="src\include\Specs.h" />
+    <ClInclude Include="src\include\Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\3 year\Game Development Lab\Lab 2 LOTR\assets\Boost.png" />

@@ -5,8 +5,8 @@ namespace Engine {
     namespace utils {
 
         inline Vector2 generateRandomPosition(const int xRange, const int yRange) {
-            return { static_cast<float>(GetRandomValue(0, xRange)),
-                     static_cast<float>(GetRandomValue(0, yRange)) };
+            return { static_cast<float>(GetRandomValue(0, xRange-1)),
+                     static_cast<float>(GetRandomValue(0, yRange-1)) };
         }
 
        inline bool EventTimer() {
